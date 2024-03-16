@@ -1,0 +1,670 @@
+#root {
+  /* margin: 0 auto; */
+  /* padding: 2rem; */
+  /* text-align: center; */
+  background-image: linear-gradient(90deg, #000000, #3533cd);
+  width: 100vw;
+  height: 100vh;
+  /* overflow-x: hidden; */
+}
+.navbar{
+  height: 80px;
+  background-color: transparent;
+  color: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  margin-top: 1rem;
+}
+.icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.icons a{
+  border: none;
+  transition: all linear 5ms;
+}
+.icons a:hover{
+  border-top: 3px;
+  border-bottom: 3px;
+  border-style: solid;
+  border-left: none;
+  border-right: none;
+  border-color:yellow;
+  border-radius: 5px;
+  padding:2px 0;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.logo img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px white solid;
+}
+.hmenu{
+  display: none;
+}
+ button{
+  background-color: transparent !important;
+  font-size: 25px !important;
+  padding: 10px 15px !important;
+
+ }
+.xsMenu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60vw;
+  height:100vh;
+  position: absolute;
+  right: -70px;
+  top: -20px;
+  gap: 10px;
+  border-left: 3px solid transparent;
+  background-image: linear-gradient(135deg, #000000, #3533cd);
+  transition: all linear 2s;
+  animation: appear 0.4s ease-in;
+
+  border-radius: 2px;
+  z-index: 100;
+}
+.xsMenu button{
+  background-color: grey;
+  position: absolute;
+  left: 10px;
+  top: 15px;
+}
+.xsIcons{
+  position: relative;
+  top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.xsIcons a:hover{
+  border-top: 0px;
+  border-bottom: 3px;
+  border-style: solid;
+  border-left: none;
+  border-right: none;
+  border-color:yellow;
+  border-radius: 5px;
+  padding:2px 0;
+  
+}
+
+
+.intro{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 50%;
+}
+.intro h3{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.intro h1{
+  margin: 1rem 0px !important;
+  padding: 0 !important;
+}
+.intro p{
+  margin-bottom: 2rem;
+  text-align: justify;
+
+}
+.intro button{
+  background-color: transparent;
+  border: 2px solid yellowgreen;
+  color: white;
+  font-size: 18px !important;
+  border-radius: 5px !important;
+  transition: transform 1s;
+  margin-bottom: 5rem;
+}
+.intro button:hover{
+  color: yellow;
+  border-color: white;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px 2px white;
+
+}
+.hero{
+  height: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 0 2rem;
+}
+.myImg{
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  margin-bottom: 3rem;
+  box-shadow: 0 0 20px 4px white;
+}
+
+.About{
+  display: flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items: center;
+  color: black;
+  text-align: justify;
+  background-color: white;
+  background-image: url("bg3.jpg");
+  max-height: 90vh;
+  margin: 0 auto;
+  padding: 3rem;
+  
+
+}
+.aboutPic img{
+  width: 600px;
+  height: 500px;
+}
+.About h2{
+  font-size: 40px;
+  margin-bottom: 1rem !important;
+  text-align: center;
+}
+.abt{
+  background-color: aquamarine;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.abt .logos{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.abt .logos img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.course{
+  background-image: linear-gradient(90deg, #000000, #3533cd);
+  padding-bottom: 2rem;
+}
+.heading{
+  text-align: center;
+}
+.heading h1{
+  margin-top: 0 !important;
+  margin-bottom: 0;
+  font-size: 40px;
+  padding-top: 3rem;
+}
+.heading h2{
+  margin-top: 0 !important;
+  font-size: 1rem;
+  color: yellow;
+}
+.why-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  width: 60%;
+  margin: 3em auto;
+  padding: 1rem 0.5rem;
+  border-radius: 1.5rem;
+  text-align: left;
+  box-shadow: 0 0 10px 2px white;
+
+}
+.why-box h3{
+  margin: 0;
+}
+.courseDes{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+}
+.course-structure{
+  background-image: url("course2.jpg");
+  padding: 0 1.5rem 1rem 1.5rem;
+  width: 40%;
+  border-radius: 1.5rem;
+  color:yellow;
+  box-shadow: 0 0 10px 2px white;
+
+}
+.course-structure h2{
+  text-align: center;
+  color: rgb(183, 221, 108);
+}
+.course-structure ul{
+  margin-left: 8%;
+}
+.EnrollButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:2rem;
+}
+.EnrollButton button{
+  color: yellow;
+  border: 2px solid white;
+  transition: all linear 1s;
+  animation: eseout infinite linear 0.7s;
+}
+.EnrollButton button:hover{
+  color: white;
+  border-color: yellow;
+}
+.moduleBg{
+
+  padding: 2rem 0;
+}
+.module{
+  margin: 0 auto;
+  padding: 2rem;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(90deg, #000000, #3533cd);
+  border-radius: 1.5rem;
+  padding-bottom: 3rem;
+  background-size: 50%;
+}
+.module-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+
+}
+.module-list > div{
+  flex: 40%;
+}
+.module-details{
+  background:transparent;
+  list-style-type:none;
+  width: 40%;
+  border: 2px solid white;
+  padding: 1rem 2rem 2rem 2rem;
+  border-radius: 1.5rem;
+}
+.hd1{
+  margin-top: 0;
+  font-size: 40px;
+}
+a{
+  text-decoration: none;
+}
+.rewards{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+}
+.rwd{
+  /* background:white; */
+  margin: 0 auto;
+  color: white;
+  width: 80%;
+}
+.contact{
+  background-image: url("contact.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* padding: 2rem 0; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.contact h1{
+  text-align: center;
+  color: yellow;
+  background-color: #000000;
+}
+.contactForm{
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  margin-left: 30%;
+  gap: 1rem;
+  padding: 3rem;
+}
+.inp{
+  width: 80%;
+}
+.inp label{
+  font-size: 1.5rem;
+  color: #000000;
+}
+.inp input{
+  padding:1rem;
+  width: 100%;
+}
+.inp textarea{
+  width: 100%;
+  padding: 1rem;
+}
+
+.contactForm button{
+  background-color: #000000 !important;
+  border: 2px solid yellow;
+  margin: 0 auto;
+}
+.footer{
+  background-image: linear-gradient(90deg, #000000, #3533cd);
+  color: yellow;
+  margin: 0rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.social-icons{
+  display: flex;
+  gap: 1.5rem;
+}
+.social-icons a{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  text-decoration: none;
+  border: 2px solid yellow;
+  box-shadow: 0 0 10px 2px white;
+
+}
+.social-icons a:hover{
+  background-color: white;
+  color: black;
+}
+
+
+
+
+
+
+@media(max-width:640px){
+  .hero{
+    height: 70vh;
+    align-items: flex-start;
+  }
+  #root{
+    max-height: 200h;
+  }
+  .hmenu{
+    display: block;
+    position: relative;
+  }
+  .icons{
+    display: none;
+  }
+  .navbar{
+    justify-content: space-between;
+    padding: 6px 15px 0px 15px;
+    margin-top: 0;
+    box-shadow: 0 0.01px 3px 1px white;
+  }
+  .intro{
+    align-items: center;
+    justify-content: center;
+    margin: 3rem auto;
+    width: 80%;
+  }
+  .intro button{
+    margin-bottom: 2rem;
+  }
+  
+ 
+  .Image{
+    display: none;
+  }
+  .About{
+    margin: 0;
+    width: 100%;
+    flex-direction: column-reverse;
+    padding: 0;
+    gap: 1rem;
+    
+  }
+  
+  .aboutPic img{
+    width: 60vw;
+    height: 250px;
+  }
+  .abt{
+    width: 90vw;
+    max-height: 500px;
+  }
+  .abt .logos img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+ 
+  .heading h1{
+    margin-top: 0 !important;
+    margin-bottom: 0;
+    font-size: 30px;
+    padding-top: 2rem;
+  }
+  .heading h2{
+    margin-top: 0 !important;
+    font-size: 12px;
+    color: yellow;
+  }
+  .why-box{
+    background-color: black;
+    width: 80%;
+    margin: 2rem auto;
+    padding: 1rem 0.5rem;
+    text-align: left;
+  }
+  .why-box h3{
+    margin: 0;
+  }
+  .why-box p{
+    margin-top: 0px;
+    margin-bottom:8px;
+
+  }
+  .courseDes{
+    justify-content:center;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .course-structure{
+    padding: 0 1rem 1rem 1rem;
+    width: 60%;
+  }
+
+  .moduleBg{
+    padding: 1rem 0;
+  }
+  .module{
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+   
+  }
+  .module-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  
+  }
+  
+  .module-details{
+  
+    width: 80%;
+    border: 2px solid white;
+    padding: 1rem 2rem 2rem 1rem;
+  }
+
+  .testimonials{
+    display: none;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    color: black;
+    text-align: justify;
+    background-color: rgb(78, 78, 77);
+    height: 100vh;
+    width: 90vw;
+    margin: 5rem;
+  }
+  .testimonials h2{
+    color: yellow;
+  }
+  .testimonial{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color:; */
+    flex-wrap: wrap;
+    background-image: url("about.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    
+  }
+  .testimonials h2{
+    font-size: 30px;
+  }
+  
+  .tstm{
+    width: 200px;
+    height: 300px;
+    border: 2px solid yellow;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.5rem;
+    color: white;
+  }
+  .people{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
+    margin: 0;
+    gap: 0.5rem;
+  }
+  .people h4{
+    color: yellow;
+  }
+  .people img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+  }
+
+  .rewards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+  }
+  .rewards img{
+      height: 200px;
+      width: 250px;
+    
+  }
+
+  .contact{
+    
+    height: 70vh;
+  }
+ 
+  .contactForm{
+   
+    width: 80%;
+    margin: 0 auto;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .inp{
+    width: 80%;
+  }
+.inp input{
+    padding:0.5rem;
+    width: 100%;
+  }
+  .inp textarea{
+    width: 95%;
+    height: 50px;
+  }
+  .footer{
+    margin-top: -3rem;
+  }
+
+
+
+ 
+ 
+  
+  
+}
+@keyframes appear{
+  0%{
+    transform:translateX(400px);
+  }
+  100%{
+    transform:translateX(00px);
+
+  }
+}
+@keyframes eseout{
+  0%{
+    transform:scale(1);
+  }
+  100%{
+    transform:scale(1.1);
+
+  }
+}
+
+
